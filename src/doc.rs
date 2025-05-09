@@ -533,6 +533,10 @@ impl NodeAddr {
         }
     }
 
+    pub fn node_id(&self) -> String {
+        self.node_id.to_string()
+    }
+
     /// Get the direct addresses of this peer.
     pub fn direct_addresses(&self) -> Vec<String> {
         self.addresses.clone()
